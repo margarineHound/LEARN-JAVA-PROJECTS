@@ -1,32 +1,36 @@
-package codecademy.languageinheritance;
-
-public class Language {
-
+public class  Language {
+    
     protected String name;
     protected int numSpeakers;
     protected String regionsSpoken;
     protected String wordOrder;
 
-    Language(String name, int numSpeakers, String regionsSpoken, String wordOrder) {
-        this.name = name;
-        this.numSpeakers = numSpeakers;
-        this.regionsSpoken = regionsSpoken;
-        this.wordOrder = wordOrder;
-    }
 
-    public void getInfo() {
-        System.out.println(this.name + " is spoken by " + this.numSpeakers + " people mainly in " + this.regionsSpoken + ".");
-        System.out.println("The language follows the word order: " + this.wordOrder + ".");
-    }
+    Language(String inName, int inSpeakers, String inRegion, String inOrder){
+       this.name = inName;
+       this.numSpeakers = inSpeakers;
+       this.regionsSpoken = inRegion;
+       this.wordOrder = inOrder;
 
-    public static void main(String[] args) {
-        Language french = new Language("French", 76_000_000, "France", "Subject | Verb | Complement");
-        french.getInfo();
-        Mayan kiche = new Mayan("Kʼiche", 2_330_00);
+    }
+    public void getInfo(){
+        System.out.println(name+ " is spoken by " 
+                + numSpeakers + " people mainly in " + regionsSpoken+".");
+        System.out.println("The language follows the word order: "
+        + wordOrder + ".");
+        
+
+    }
+    public static void main(final String[] args){
+        Language hawaiian = new Language("Hawaiian", 1000000, "Hawaii",
+            "verb-subject-object");
+        hawaiian.getInfo();
+        System.out.println("\n");
+        
+        Mayan kiche = new Mayan("Ki'che", 2300000);
         kiche.getInfo();
-        SinoTibetan mandarin = new SinoTibetan("Mandarin Chinese", 920_000_000);
-        SinoTibetan burmese = new SinoTibetan("Burmese", 32_000_000);
-        mandarin.getInfo();
-        burmese.getInfo();
+
+
+
     }
 }

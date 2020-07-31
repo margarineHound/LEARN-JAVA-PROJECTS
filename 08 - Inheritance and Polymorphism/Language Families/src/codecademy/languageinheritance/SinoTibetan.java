@@ -1,11 +1,14 @@
-package codecademy.languageinheritance;
 
-public class SinoTibetan extends Language{
-
-    SinoTibetan(String name, int numSpeakers) {
-        super(name, numSpeakers, "Asia", "Subject | Object | Verb");
-        if (name.contains("Chinese")) {
-            this.wordOrder = "Subject | Vers | Object";
-        }
+public class  SinoTibetan extends Language{
+    SinoTibetan(String name, int num){
+        super(name, num, "Asia", "subject-object-verb");
+        if(name.toLowerCase().contains("chinese")){
+            this.wordOrder = "subject-verb-object";
+        }        
     }
+
+
+    
+
+    
 }
