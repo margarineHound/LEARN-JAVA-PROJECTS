@@ -59,7 +59,7 @@ public class  Language {
         System.out.println("\n");
 
         ArrayList<SinoTibetan> sinoLangs = new ArrayList<SinoTibetan>();
-        sinoLangs.add(new SinoTibetan("sin1", 1000));
+        sinoLangs.add(new SinoTibetan("sin3", 1000));
         sinoLangs.add(new SinoTibetan("sin2", 2000));
         sinoLangs.add(new SinoTibetan("sin3", 3000));
 
