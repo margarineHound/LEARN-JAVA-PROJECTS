@@ -6,9 +6,5 @@ public class  SinoTibetan extends Language{
             this.wordOrder = "subject-verb-object";
         }        
     }
-
-
-    
-
     
 }
